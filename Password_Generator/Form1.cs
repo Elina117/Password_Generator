@@ -119,29 +119,32 @@ namespace Password_Generator
                 string all_symb = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM123456789!@#$%^&*(){}[]?><";
                 string result = "";
 
+                int all_symb_length = all_symb.Length;
+
                 for(int i = 0; i < len_pas; i++)
                 {
-
+                    result += all_symb[random.Next(all_symb_length)];
                 }
 
+                textBox_password.Text = result;
 
             }
 
-        }
-
-        public void Shuffle(char[] array)
-        {
-            char temp;
-            for (int i = array.Length - 1; i >= 1; i--)
+            if (checkBox_123.Checked == true & checkBox_high_ABC.Checked == false & checkBox_abc.Checked == false & checkBox_symbols.Checked == true)
             {
-                char j = (char)random.Next(i + 1);
+                int len_pas = int.Parse(label_length_of_password.Text);
 
-                temp = array[j];
-                array[j] = array[i];
-                array[i] = temp;
+                for (int i = 0; i < len_pas; i++)
+                {
+                    char value = (char)random.Next(33, 46);
+                    textBox_password.Text += value.ToString();
+
+                }
             }
-            
+
         }
+
+       
 
     }
 }
