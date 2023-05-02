@@ -117,13 +117,15 @@
             // linkLabel_remember
             // 
             this.linkLabel_remember.AutoSize = true;
-            this.linkLabel_remember.Location = new System.Drawing.Point(1189, 389);
+            this.linkLabel_remember.Location = new System.Drawing.Point(1316, 384);
             this.linkLabel_remember.Name = "linkLabel_remember";
             this.linkLabel_remember.Size = new System.Drawing.Size(121, 25);
             this.linkLabel_remember.TabIndex = 8;
             this.linkLabel_remember.TabStop = true;
             this.linkLabel_remember.Text = "Запомнить";
             this.linkLabel_remember.Visible = false;
+            this.linkLabel_remember.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_remember_LinkClicked);
+            this.linkLabel_remember.Click += new System.EventHandler(this.linkLabel_remember_Click);
             // 
             // label2
             // 
@@ -216,6 +218,7 @@
             this.pictureBox_copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_copy.TabIndex = 17;
             this.pictureBox_copy.TabStop = false;
+            this.pictureBox_copy.Click += new System.EventHandler(this.pictureBox_copy_Click);
             // 
             // Form1
             // 
