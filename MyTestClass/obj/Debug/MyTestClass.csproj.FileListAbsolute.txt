@@ -1,0 +1,2 @@
+\\Mac\Home\Downloads\Password_Generator\MyTestClass\obj\Debug\MyTestClass.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\Password_Generator\MyTestClass\obj\Debug\MyTestClass.csproj.CoreCompileInputs.cache
