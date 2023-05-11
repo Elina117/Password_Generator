@@ -13,6 +13,7 @@ namespace Password_Generator
 {
     public partial class Form1 : Form
     {
+       
 
         Random random = new Random();
         public Form1()
@@ -26,7 +27,7 @@ namespace Password_Generator
 
        
 
-        private void pictureBox3_Click_1(object sender, EventArgs e)
+        public void pictureBox3_Click_1(object sender, EventArgs e)
         {
             string len = label_length_of_password.Text;
             int len_num = int.Parse(len);
@@ -44,7 +45,7 @@ namespace Password_Generator
             
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        public void pictureBox2_Click(object sender, EventArgs e)
         {
             string len = label_length_of_password.Text;
             int len_num = int.Parse(len);
@@ -60,7 +61,7 @@ namespace Password_Generator
             label_length_of_password.Text = finish;
         }
 
-        private void button_generate_Click(object sender, EventArgs e)
+        public void button_generate_Click(object sender, EventArgs e)
         {
             textBox_password.Clear();
             linkLabel_remember.Visible = true;
@@ -324,17 +325,17 @@ namespace Password_Generator
 
         }
 
-        private void pictureBox_copy_Click(object sender, EventArgs e)
+        public void pictureBox_copy_Click(object sender, EventArgs e)
         {
             textBox_password.Copy();
         }
 
-        private void linkLabel_remember_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        public void linkLabel_remember_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Program.Write($"\n {textBox_password.Text} ");
         }
 
-        private void linkLabel_remember_Click(object sender, EventArgs e)
+        public void linkLabel_remember_Click(object sender, EventArgs e)
         {
             Program.Write($"\n {textBox_password.Text} ");
         }
