@@ -3,19 +3,17 @@ using System;
 using System.Reflection.Emit;
 using Password_Generator;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace MyTestClass
 {
     [TestClass]
     public class UnitTest1
     {
-        private Form1 form;
+        public Form1 form;
 
 
-        public void Setup()
-        {
-            form = new Form1();
-        }
+      
 
         [TestMethod]
         public void GeneratePassword_WhenCheckBox123Checked()

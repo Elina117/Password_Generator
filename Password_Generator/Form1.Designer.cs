@@ -5,7 +5,7 @@
         /// <summary>
         /// Обязательная переменная конструктора.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Освободить все используемые ресурсы.
@@ -26,7 +26,7 @@
         /// Требуемый метод для поддержки конструктора — не изменяйте 
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.checkBox_abc = new System.Windows.Forms.CheckBox();
             this.checkBox_high_ABC = new System.Windows.Forms.CheckBox();
@@ -254,22 +254,22 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox_abc;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox checkBox_high_ABC;
-        private System.Windows.Forms.CheckBox checkBox_123;
-        private System.Windows.Forms.CheckBox checkBox_symbols;
-        private System.Windows.Forms.TextBox textBox_password;
-        private System.Windows.Forms.Button button_generate;
-        private System.Windows.Forms.LinkLabel linkLabel_remember;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label_length_of_password;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox_copy;
+        public System.Windows.Forms.CheckBox checkBox_abc;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.CheckBox checkBox_high_ABC;
+        public System.Windows.Forms.CheckBox checkBox_123;
+        public System.Windows.Forms.CheckBox checkBox_symbols;
+        public System.Windows.Forms.TextBox textBox_password;
+        public System.Windows.Forms.Button button_generate;
+        public System.Windows.Forms.LinkLabel linkLabel_remember;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.Label label_length_of_password;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.PictureBox pictureBox_copy;
     }
 }
 
